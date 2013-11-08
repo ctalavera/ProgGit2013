@@ -67,11 +67,11 @@ for(i=0;i<size;i++){
 calWages(hours, payRate, wages,size);
 }//end getData
 
-
+//Imprime la informacion en forma tabular
 void displayData(char name[ROW][COL],char Id[ROW][COL],int hours[ROW], double payRate[ROW],double wages[ROW], int size){
 	int i;
 	cout<<fixed;
-	cout<<"\nName       ID      Hours      Pay Rate    Wages\n";
+	cout<<"\nName          ID         Hours        Pay Rate    Wages\n";
 	for(i=0;i<size;i++){
 		cout<<name[i]<<setw(10)<<Id[i]<<setw(5)<<hours[i]<<setprecision(3)<<setw(8)<<payRate[i]<<setprecision(3)<<setw(15)<<wages[i]<<endl;
 	}//end for
